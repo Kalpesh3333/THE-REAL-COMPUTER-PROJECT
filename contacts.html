@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<style type="text/css">
+.custom-form {text-align:center;color:orange; background:black; margin: 10px;}
+.form1 {text-align:center;color:orange;}
+.navbar a {font-size:23pt; font-family: consolas; color:grey; margin: 0 10px;}
+.form2 {font-family:consolas; color:orange; font-size:19pt;}
+.form3 {font-family:consolas; color:black; font-size:19pt;}
+.container { max-width: 100%;}
+.navbar a:hover {color:orange}
+.heading {text-align:center;color:orange; background:black; margin: 10px;}
+.navbar {text-align: center; margin: 10px;}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1 class="heading">YUMNUM RESTAURANT</h1><hr border="1">
+    <div class="navbar">
+        <a href="final.html">Home</a>
+        <a href="menus.html">Menu</a>
+        <a href="breakfast.html">Breakfast</a>
+        <a href="lunch.html">Lunch</a>
+        <a href="snacks.html">Snack</a>
+	<a href="contacts.html">Contact us</a>
+    </div>
+</div>
+<h2 class="heading">Contact us</h2>
+<form name="contacts">
+    <fieldset class="form2">
+        <legend><b>Personal Information</b></legend>
+        <table border="0">
+            <tr>
+                <td>Your name:</td>
+                <td><input type="text" name="txtname" size="20"></td>
+            </tr>
+            <tr>
+                <td>Your E-mail address:</td>
+                <td><input type="text" name="txtemail" size="20"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset class="form2">
+        <legend><b>Your complaint</b></legend>
+        <select name="choice" size="4" class="form3">
+            <option>The food was under-cooked</option>
+            <option>The food was over-cooked</option>
+            <option>Bad service</option>
+            <option>Rude waiters</option>
+            <option>Everything was alright!</option>
+        </select>
+    </fieldset>
+    <p class="form2">Please fill any suggestion for YUMNUM restaurant</p>
+    <textarea name="suggestion" rows="4" cols="40" class="form2"></textarea>
+    <p class="form3"><input type="submit">&nbsp;&nbsp;<input type="reset" value="reset"></p>
+<h2 class="heading">Rate us</h1><hr border="1">
+<div class="form2">
+  <input type="checkbox" id="star5" onclick="rate(5)">
+  <label for="star5">&#9733;</label>
+  <input type="checkbox" id="star4" onclick="rate(4)">
+  <label for="star4">&#9733;</label>
+  <input type="checkbox" id="star3" onclick="rate(3)">
+  <label for="star3">&#9733;</label>
+  <input type="checkbox" id="star2" onclick="rate(2)">
+  <label for="star2">&#9733;</label>
+  <input type="checkbox" id="star1" onclick="rate(1)">
+  <label for="star1">&#9733;</label>
+</div>
+</form>
+</body>
+</html>
